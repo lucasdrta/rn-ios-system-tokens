@@ -2,10 +2,46 @@
   "name": "@lucasdrta/rn-ios-system-tokens",
   "version": "1.0.0",
   "description": "Native iOS System Fonts and Colors for React Native",
-  "main": "index.ts",
-  "types": "index.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "ios",
+    "dynamic-type",
+    "semantic-colors",
+    "dark-mode",
+    "accessibility"
+  ],
+  "author": "Lucas Duarte",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasdrta/rn-ios-system-tokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasdrta/rn-ios-system-tokens/issues"
+  },
+  "homepage": "https://github.com/lucasdrta/rn-ios-system-tokens#readme",
+  "files": [
+    "build",
+    "ios",
+    "expo-module.config.json"
+  ],
   "peerDependencies": {
     "expo": "*",
-    "react": "*"
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "expo-module-scripts": "^3.0.0",
+    "typescript": "^5.0.0"
   }
 }

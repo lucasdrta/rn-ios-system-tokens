@@ -35,7 +35,7 @@ export function useSystemFonts(): SystemFonts | null {
     setFonts(getSystemFonts())
 
     // Subscribe to changes
-    const subscription = emitter.addListener('onFontsChanged', (newFonts: SystemFonts) => {
+    const subscription = (emitter as any).addListener('onFontsChanged', (newFonts: SystemFonts) => {
       setFonts(newFonts)
     })
 
@@ -66,7 +66,7 @@ export function useSystemColors(): SystemColors | null {
     })
 
     // Also listen for potential native events if implemented
-    const nativeSub = emitter.addListener('onColorsChanged', (newColors: SystemColors) => {
+    const nativeSub = (emitter as any).addListener('onColorsChanged', (newColors: SystemColors) => {
       setColors(newColors)
     })
 

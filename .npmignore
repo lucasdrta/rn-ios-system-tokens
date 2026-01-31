@@ -1,0 +1,8 @@
+# Exclude everything by default, use allow-list in package.json "files"
+# But specifically ignore these if they somehow get included
+src/
+tsconfig.json
+.vscode/
+.idea/
+.DS_Store
+example/
