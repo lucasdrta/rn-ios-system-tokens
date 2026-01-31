@@ -1,4 +1,4 @@
-# @lucasdrta/rn-ios-system-tokens
+# @lucasdrta2/rn-ios-system-tokens
 
 Access native iOS System Fonts (Dynamic Type) and System Colors (semantic colors) in React Native with Expo. 
 
@@ -14,13 +14,13 @@ This library allows your app to respect the user's system-wide font size setting
 ## Installation
 
 ```bash
-npm install @lucasdrta/rn-ios-system-tokens
+npm install @lucasdrta2/rn-ios-system-tokens
 ```
 
 or
 
 ```bash
-yarn add @lucasdrta/rn-ios-system-tokens
+yarn add @lucasdrta2/rn-ios-system-tokens
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ The hooks are the easiest way to use the library as they automatically trigger a
 ```tsx
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import { useSystemFonts, useSystemColors } from '@lucasdrta/rn-ios-system-tokens';
+import { useSystemFonts, useSystemColors } from '@lucasdrta2/rn-ios-system-tokens';
 
 export default function App() {
   const fonts = useSystemFonts();
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
 You can also fetch the values once if you don't need them to be reactive or want to use them outside of a component.
 
 ```ts
-import { getSystemFonts, getSystemColors } from '@lucasdrta/rn-ios-system-tokens';
+import { getSystemFonts, getSystemColors } from '@lucasdrta2/rn-ios-system-tokens';
 
 // Get current values
 const fonts = getSystemFonts();

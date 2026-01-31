@@ -1,7 +1,7 @@
 {
-  "name": "@lucasdrta/rn-ios-system-tokens",
+  "name": "@lucasdrta2/rn-ios-system-tokens",
   "version": "1.0.0",
-  "description": "Native iOS System Fonts and Colors for React Native",
+  "description": "Native iOS System Fonts (Dynamic Type) and System Colors for React Native. Respects Accessibility settings and Dark Mode.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -18,7 +18,16 @@
     "dynamic-type",
     "semantic-colors",
     "dark-mode",
-    "accessibility"
+    "accessibility",
+    "uikit",
+    "swift",
+    "font-scaling",
+    "system-design",
+    "typography",
+    "theme",
+    "appearance",
+    "ios-system-colors",
+    "ios-system-fonts"
   ],
   "author": "Lucas Duarte",
   "license": "MIT",
