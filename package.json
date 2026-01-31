@@ -1,6 +1,6 @@
 {
   "name": "@lucasdrta2/rn-ios-system-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native iOS System Fonts (Dynamic Type) and System Colors for React Native. Respects Accessibility settings and Dark Mode.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
