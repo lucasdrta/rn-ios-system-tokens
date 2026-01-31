@@ -1,10 +1,14 @@
+require 'json'
+
+package = JSON.parse(File.read(File.join(__dir__, '..', 'package.json')))
+
 Pod::Spec.new do |s|
   s.name           = 'RnIosSystemTokens'
-  s.version        = '1.0.0'
-  s.summary        = 'Native iOS System Fonts and Colors for React Native'
-  s.description    = 'Exposes system dynamic type metrics and semantic colors to React Native'
-  s.author         = 'Lucas Duarte'
-  s.homepage       = 'https://github.com/lucasdrta/rn-ios-system-tokens'
+  s.version        = package['version']
+  s.summary        = package['description']
+  s.description    = package['description']
+  s.author         = package['author']
+  s.homepage       = package['homepage']
   s.platform       = :ios, '13.0'
   s.source         = { git: '' }
   s.static_framework = true
